@@ -1,1 +1,71 @@
-<h1>Hello World</>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Present</title>
+    <link rel="stylesheet" href="tagify.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+    <div class="heading">
+    <h1>Conjugate for "he/she/it"</h1>
+    </div>
+    <form style="margin: 100px">
+        <input type="text" value="">
+    </form>
+
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">eat</button>
+                    <button class="btn">drink</button>
+                    <button class="btn">play</button>
+                    <button class="btn">watch</button>
+                    <button class="btn">go</button>
+                    <button class="btn">do</button>
+                    <button class="btn">make</button>
+                    <button class="btn">listen</button>
+                    <button class="btn">talk</button>
+                    <button class="btn">read</button>
+                    <button class="btn">write</button>
+                    <button class="btn">like</button>
+                    <button class="btn">give</button>
+                    <button class="btn">sleep</button>
+                    <button class="btn">learn</button>
+                    <button class="btn">use</button>
+                    <button class="btn">study</button>
+                    <button class="btn">take</button>
+                    <button class="btn">brush</button>
+                    <button class="btn">help</button>
+                    <button class="btn">start</button>
+                    <button class="btn">open</button>
+                    <button class="btn">close</button>
+                    <button class="btn">have</button>
+                    <button class="btn">need</button>
+                    <button class="btn">want</button>
+                    <button class="btn">love</button>
+                    <button class="btn">sit</button>
+                    <button class="btn">walk</button>
+                    <button class="btn">run</button>
+                
+            </div>
+
+
+
+    <script src="tagify.min.js"></script>
+    <script>
+        var input = document.querySelector('input[type=text]')
+        var tagify = new Tagify (input, {
+            whitelist: ['eats', 'drinks', 'plays', 'watches', 'goes', 'does',
+                       'makes', 'listens', 'talks', 'reads', 'writes', 'likes', 'gives', 'sleeps',
+                       'learns', 'uses', 'studies', 'takes', 'brushes', 'helps', 'starts', 'opens',
+                        'closes', 'has', 'needs', 'wants', 'loves', 'sits', 'walks', 'runs' ],
+            blacklist: ['eat', 'drink', 'play', 'watch', 'go','do',
+                       'make', 'listen', 'talk', 'read', 'write', 'like', 'give', 'sleep',
+                       'learn', 'use', 'study', 'take', 'brushe', 'help', 'start', 'open',
+                        'close', 'have', 'need', 'want', 'love', 'sit', 'walk', 'run'],
+        })
+    </script>
+</body>
+</html>
